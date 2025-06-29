@@ -159,16 +159,23 @@ figcaption {
         text-align: center;
       }
 
+      #deMorganRetrato{
+        width: 90%;
+      }
+
+
 
       #textoMorgan{
-
-        padding-inline: 30px;
+        margin: 0;
+        padding-inline: 10px;
+        font-size: larger;
+        text-align: center;
 
 
       }
 
       .retrato {
-          width: 200px;
+          width: 180px;
           height: auto;
           margin: 5px;
           margin-bottom: 1px; 
