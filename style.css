@@ -111,7 +111,7 @@ figcaption {
 
 }
 
-.boton{
+.next{
   border: 3px black solid;
   border-radius: 10px;
   position:absolute;
@@ -121,6 +121,24 @@ figcaption {
   width:fit-content;
   box-shadow: 5px 5px 3px rgba(245, 245, 220,0.6);
   a{
+    text-decoration: none;
+    color: black;
+  }
+
+}
+
+
+.prev{
+  border: 3px black solid;
+  border-radius: 10px;
+  position: absolute;
+  left: 25px;
+  bottom: 25px;
+  padding: 10px;
+  width: fit-content;
+  box-shadow: 5px 5px 3px rgba(245, 245, 220, 0.6);
+
+  a {
     text-decoration: none;
     color: black;
   }
@@ -137,6 +155,7 @@ figcaption {
     background-color: rgb(163, 163, 163);
 
 
+
     .retrato {
         width: 200px;
         height: auto;
@@ -149,13 +168,15 @@ figcaption {
       background-color: rgba(250, 235, 215, 0.6);  
       display: flex;
       position: relative;
+      padding-top: 100px;
     }
   
 
     .col2{
+      padding-top: 100px;
       background-color: rgb(148, 148, 149);
       position: relative;
-      h5{
+      h3{
         text-align: center;
       }
 
@@ -179,7 +200,7 @@ figcaption {
           height: auto;
           margin: 5px;
           margin-bottom: 1px; 
-          margin-inline: 155px;
+          margin-inline: 140px;
         }
 
         .fotoMorgan{
