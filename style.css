@@ -1,0 +1,200 @@
+body{
+  padding: 0;
+  margin: 0;
+  /* overflow: hidden; */
+}
+
+figure {
+  padding: 0;
+  margin: 0;
+}
+
+figcaption {
+  font-size: 14px;
+  margin: 0;
+  text-align: center;
+}
+
+.none{
+  display: none;
+}
+
+
+
+
+
+
+#primeraDiapo{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  box-sizing: border-box;
+  border-bottom: 3px solid black;
+  width: 100%;
+  height: 100vh;
+  background-color: lightgray;
+
+  #retratoAda {
+      background-image: url(./img/AdaRetrato.avif);
+      background-size: 100% 100%; 
+  }
+
+
+  #col2{
+    position: relative;
+    #title{
+      background-color: rgba(250, 235, 215,0.6);
+      margin: 0;
+      padding: 20px;
+      font-size: 70px;
+      text-align: center;
+    }
+    #subtitle{
+      margin: 15px;
+      font-size: 50px;
+      text-align: center;
+    }
+
+    .retrato {  
+      width: 300px;
+      height: auto;
+      margin: 5px;
+      margin-bottom: 1px;
+    }
+
+    #cuerpoDiapo1{
+
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+
+
+      #emblema {
+          height: fit-content;
+          font-size: 30px;
+          transition: 2s;
+          margin-inline: 15px;
+      
+          .referencia {
+            font-size: 14px;
+      
+          }
+      
+          rt {
+            opacity: 0;
+            transition: 1.5s;
+          }
+      
+          &:hover {
+            rt {
+              opacity: 1;
+            }
+          }     
+        
+        }
+
+
+
+      #padresRetrato{
+        margin: auto;
+        h5{
+          text-align: center;
+        }
+
+        img{
+          margin-inline: 180px;
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+.boton{
+  border: 3px black solid;
+  border-radius: 10px;
+  position:absolute;
+  right: 25px;
+  bottom: 25px;
+  padding: 10px;
+  width:fit-content;
+  box-shadow: 5px 5px 3px rgba(245, 245, 220,0.6);
+  a{
+    text-decoration: none;
+    color: black;
+  }
+
+}
+
+#segundaDiapo{
+
+  display: grid;
+    grid-template-columns: 2fr 1fr;
+  
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(163, 163, 163);
+
+
+    .retrato {
+        width: 200px;
+        height: auto;
+        margin: 5px;
+        margin-bottom: 1px;
+        margin-inline: 155px;
+      }
+
+    .col1{
+      background-color: rgba(250, 235, 215, 0.6);  
+      display: flex;
+      position: relative;
+    }
+  
+
+    .col2{
+      background-color: rgb(148, 148, 149);
+      position: relative;
+      h5{
+        text-align: center;
+      }
+
+
+      #textoMorgan{
+
+        padding-inline: 30px;
+
+
+      }
+
+      .retrato {
+          width: 200px;
+          height: auto;
+          margin: 5px;
+          margin-bottom: 1px; 
+          margin-inline: 155px;
+        }
+
+        .fotoMorgan{
+
+          width: 400px;
+          height: auto;
+          margin-inline: 50px;
+          margin-block: 20px;
+          box-sizing: border-box;
+          border:3px solid black ;
+        }
+
+        .bdRelacionales{
+          width: 400px;
+          height: 180px;
+          margin: auto;
+          background-size: 107% 100%;
+          box-sizing: border-box;
+          border: 3px solid black;
+          background-image: url(./img/BDRelacionales.png);
+        }
+
+    }
+
+}
