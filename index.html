@@ -15,7 +15,7 @@
       <h2 id="subtitle"> Biografia</h2>
 
       <div id="cuerpoDiapo1">
-        <p id="emblema">
+        <p class="emblema">
           <strong><ruby>"The Analytic Enigne <rt>La Maquina Analitica</rt></ruby></strong>
           <ruby>has no pretension whatever <rt>no tiene pretensión alguna</rt></ruby>
           <ruby>to originate anything. <rt>de originar nada.</rt></ruby>
@@ -48,6 +48,8 @@
 
     <div class="col1">
 
+      <h2 style="width: 300px; height: 150px; position: absolute; left: 600px;top: 10px; font-size: 30px;">Formacion academica</h2>
+
       <figure id="SomervilleRetrato" style="text-align: center;">
         <h3>Mary Somerville</h3>
         <img src="./img/SomervilleRetrato.jpg" alt="Retrato de Mary Somerville" class="retrato">
@@ -72,14 +74,16 @@
         <h3>Augusto De Morgan</h3>
         <img src="./img/DeMorganRetrato.jpg" alt="retrato de Augusto De Morgan" class="retrato">
         <figcaption>27/06/1806 . 18/03/1871 (64 años)</figcaption>
+        <p id="textoMorgan" class="">Augusto De Morgan, matematico y filosofo con avances en logica proposicional y algebra
+          relacional fue tutor personal de Ada Lovelace desde que esta era jove.</p>
       </figure>
-      <p id="textoMorgan" class="" >Augusto De Morgan, matematico y filosofo con avances en logica proposicional y algebra relacional fue tutor personal de Ada Lovelace desde que esta era jove.</p>
-
-      <img src="./img/DeMorganLaws.png" alt="Leyes de De Morgan" class="fotoMorgan none">
+      
+      <div id="morganExtra" class="none">
+      <img src="./img/DeMorganLaws.png" alt="Leyes de De Morgan" class="fotoMorgan">
       <p class="textoAux none" style="text-align: center;">Ley de De Morgan logica proposicional</p>
-      <div class="bdRelacionales none" ></div>
-      <p class="textoAux none" style="text-align: center;">La teoria de conjuntos relaciones desarrollada por De Morgan es la de todas las bases relacionales</p>
-
+      <div class="bdRelacionales" ></div>
+      <p class="textoAux" style="text-align: center;">La teoria de conjuntos relaciones desarrollada por De Morgan es la de todas las bases relacionales</p>
+    </div>
 
 
 
@@ -90,10 +94,69 @@
   </div>
   
 
+  <div id="terceraDiapo">
+
+    <div class="col1" >
+
+      <div id="cuerpoCol1" class="none">
+        <h5>¿La maquina Analitica?</h5>
+        <img src="./img/maquina.jpg" alt="Maquina Analitica de Babbage">
+        <p style="text-align: center; width: 400px; margin: auto;">Si Ada Lovelace <i>solo</i> transcribio el estudio de Charles
+          Babbage sobre la maquina analitica y no la diseñó, ¿que la hace realmente importante?</p>
+  
+      </div>
+
+      <div id="cuerpoCol12" class="">
+        <figure id="Turing">
+          <h3 style="text-align: center;">¿Como se desarrolló la idea de Ada?</h3>
+          <img src="./img/alan_turing.jpg" alt="retrato de Alan Turing" class="retrato" style="width: 350px; margin-left: 80px;">
+          <figcaption style="width: 300px;margin-left: 100px;">100 años despues de la maquina analitica turing desarrollo la maquina universal</figcaption>
+        </figure>
+      </div>
+
+
+      <div class="prev"><a href="#segundaDiapo">PREV</a></div>
+    </div>
+
+    <div class="col2" >
+
+      <h2 style="width: 300px; height: 150px; position: absolute; left: 250px;top: 10px; font-size: 30px;">Aportaciones a la computacion<h2>
+      <h5 id="subtitulo" class="">¿Que es <i>La nota G</i> de Ada Lovelace?</h5>
+      
+
+      <div id="cuerpoCol2" class="">
+        <p class="emblema">
+          <strong><ruby>"The Analytic Enigne <rt>La Maquina Analitica</rt></ruby></strong>
+          <ruby>has no pretension whatever <rt>no tiene pretensión alguna</rt></ruby>
+          <ruby>to originate anything. <rt>de originar nada.</rt></ruby>
+          <ruby>It can do whatever <rt>Puede hacer cualquier cosa que</rt></ruby>
+          <ruby>we know <rt>sepamos</rt></ruby>
+          <ruby>how to order <rt>ordenarle</rt></ruby>
+          <ruby>it to perform." <rt>como hacer.</rt></ruby>
+          <br>
+          <span class="referencia">Ada Augusta, Countess of Lovelace. (A. A. L). (1842). The analitic Engine Invented by Charles
+            Babbage.</span>
+        </p>
+        <figure id="Bernoulli" class="">
+          <h3>Recursion para numeros de Bernoulli</h3>
+          <img src="./img/lovelaceAlgo.jpg" alt="retrato de Augusto De Morgan" class="retrato">
+          <figcaption>Notacion matematica equivalente al primer algoritmo de la historia</figcaption>
+        </figure>
+          
+          <iframe src="https://www.fourmilab.ch/babbage/sketch.html#NoteG" frameborder="0" width="250px" height="500px" style="margin-left:20px ;"></iframe>
+      </div>
+
+
+
+  </div>
+
+
 
 
 
 
   <div style="height: 10000px;"></div>
 </body>
+
+<script src="./script.js"></script>
 </html>

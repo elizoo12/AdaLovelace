@@ -1,7 +1,7 @@
 body{
   padding: 0;
   margin: 0;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 figure {
@@ -16,12 +16,34 @@ figcaption {
 }
 
 .none{
-  display: none;
+  display: none !important;
 }
 
 
 
+.emblema {
+  height: fit-content;
+  font-size: 30px;
+  transition: 2s;
+  margin-inline: 15px;
 
+  .referencia {
+    font-size: 14px;
+
+  }
+
+  rt {
+    opacity: 0;
+    transition: 1.5s;
+  }
+
+  &:hover {
+    rt {
+      opacity: 1;
+    }
+  }
+
+}
 
 
 #primeraDiapo{
@@ -67,29 +89,7 @@ figcaption {
       grid-template-columns: 1fr 2fr;
 
 
-      #emblema {
-          height: fit-content;
-          font-size: 30px;
-          transition: 2s;
-          margin-inline: 15px;
       
-          .referencia {
-            font-size: 14px;
-      
-          }
-      
-          rt {
-            opacity: 0;
-            transition: 1.5s;
-          }
-      
-          &:hover {
-            rt {
-              opacity: 1;
-            }
-          }     
-        
-        }
 
 
 
@@ -148,11 +148,14 @@ figcaption {
 #segundaDiapo{
 
   display: grid;
-    grid-template-columns: 2fr 1fr;
+  grid-template-columns: 2fr 1fr;
   
-    width: 100%;
-    height: 100vh;
-    background-color: rgb(163, 163, 163);
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(163, 163, 163);
+
+  box-sizing: border-box;
+    border-bottom: 3px solid black;
 
 
 
@@ -224,5 +227,65 @@ figcaption {
         }
 
     }
+
+}
+
+
+
+#terceraDiapo{
+
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(163, 163, 163);
+
+
+  h5 {
+      text-align: center;
+      font-size: larger;
+    }
+  .col1{
+    background-color: lightgray;
+    box-sizing: border-box;
+    padding-top: 100px;
+    height: 100vh;
+    position: relative;
+
+
+    img{
+      width: 400px;
+        height: auto;
+        margin-inline: 10%;
+        margin-bottom: 1px;
+    }
+
+  }
+
+  .col2{
+
+    background-color: rgba(250, 235, 215,0.75);
+    position: relative;
+    padding-top: 100px;
+
+    .emblema{
+      width: 300px;
+    }
+
+    #cuerpoCol2{
+      display: flex;
+      align-items: center;
+      h3{
+        margin-left: 35px;
+      }
+      img{
+        height: 200px;
+        width: auto;
+        margin-left: 30px;
+
+      }
+    }
+  }
 
 }
